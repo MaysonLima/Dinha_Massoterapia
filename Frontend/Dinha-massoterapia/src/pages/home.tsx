@@ -1,7 +1,7 @@
 import Contact from '../components/contact';
 import Services from '../components/services';
 import Header from '../components/header';
-import './App.css';
+import '../App.css';
 
 export default function Home(){
     return (

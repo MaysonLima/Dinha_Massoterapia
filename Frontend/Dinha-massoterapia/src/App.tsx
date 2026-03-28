@@ -1,16 +1,15 @@
-import{ BrowserRouter, Routes, Route } from "react-router-dom";
-import { useState } from 'react';
-import './App.css';
-import Home from "./pages/home"
-import ServicesPage from "./pages/services"
-import About from "./pages/about"
-import ContactPage from "./pages/contact"
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Navbar from "./components/navbar";
+import Home from "./pages/home";
+import ServicesPage from "./pages/services";
+import About from "./pages/about";
+import ContactPage from "./pages/contact";
 
 function App() {
-  const [count, setCount] = useState(0)
 
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/servicos" element={<ServicesPage />} />
@@ -18,7 +17,7 @@ function App() {
         <Route path="/contato" element={<ContactPage />} />
       </Routes>
     </BrowserRouter>
-    
+
   )
 }
 

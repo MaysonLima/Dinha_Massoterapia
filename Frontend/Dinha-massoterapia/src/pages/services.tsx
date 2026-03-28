@@ -1,3 +1,12 @@
 export default function ServicesPage(){
-    return <h1>Serviços</h1>;
+    return (
+        <section>
+            <h2>Serviços</h2>
+            <ul>
+                <li>Massagem Relaxante</li>
+                <li>Massagem Terapêutica</li>
+                <li>Drenagem Linfática</li>
+            </ul>
+        </section>
+    )
 }
