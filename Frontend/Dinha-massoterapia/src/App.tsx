@@ -4,6 +4,7 @@ import Home from "./pages/home";
 import ServicesPage from "./pages/services";
 import About from "./pages/about";
 import ContactPage from "./pages/contact";
+import Footer from "./components/footer"
 
 function App() {
 
@@ -16,6 +17,7 @@ function App() {
         <Route path="/sobre" element={<About />} />
         <Route path="/contato" element={<ContactPage />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
 
   )
